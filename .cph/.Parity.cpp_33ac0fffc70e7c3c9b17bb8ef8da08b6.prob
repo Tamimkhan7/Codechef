@@ -1,0 +1,1 @@
+{"name":"Local: Parity","url":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Parity.cpp","tests":[{"id":1679086670409,"input":"4\n10\n4\n3\n2","output":"Yes\nYes\nNo\nYes"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Parity.cpp","group":"local","local":true}

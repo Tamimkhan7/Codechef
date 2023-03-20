@@ -1,0 +1,1 @@
+{"name":"Local: Battery Health","url":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Battery Health.cpp","tests":[{"id":1679087159398,"input":"4\n97\n42\n80\n10","output":"YES\nNO\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Battery Health.cpp","group":"local","local":true}

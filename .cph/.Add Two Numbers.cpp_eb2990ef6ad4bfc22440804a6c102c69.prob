@@ -1,0 +1,1 @@
+{"name":"Local: Add Two Numbers","url":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Add Two Numbers.cpp","tests":[{"id":1679061565548,"input":"3\n1 2\n100 200\n10 40","output":"3\n300\n50"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Add Two Numbers.cpp","group":"local","local":true}

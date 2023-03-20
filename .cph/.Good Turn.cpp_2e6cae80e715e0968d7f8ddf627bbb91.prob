@@ -1,0 +1,1 @@
+{"name":"Local: Good Turn","url":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Good Turn.cpp","tests":[{"id":1679062347460,"input":"4\n1 4\n3 4\n4 2\n2 6","output":"NO\nYES\nNO\nYES"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Good Turn.cpp","group":"local","local":true}

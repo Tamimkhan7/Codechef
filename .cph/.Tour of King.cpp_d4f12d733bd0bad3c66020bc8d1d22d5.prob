@@ -1,0 +1,1 @@
+{"name":"Local: Tour of King","url":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Tour of King.cpp","tests":[{"id":1679085342638,"input":"4\n4 8\n2 13\n14 5\n8 8","output":"76\n101\n105\n96"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Tour of King.cpp","group":"local","local":true}

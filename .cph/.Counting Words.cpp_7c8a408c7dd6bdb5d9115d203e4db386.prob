@@ -1,0 +1,1 @@
+{"name":"Local: Counting Words","url":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Counting Words.cpp","tests":[{"id":1679087028334,"input":"4\n1 1\n4 2\n2 4\n95 42","output":"1\n8\n8\n3990"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Counting Words.cpp","group":"local","local":true}
