@@ -1,0 +1,1 @@
+{"name":"Local: Tax in Chefland","url":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Tax in Chefland.cpp","tests":[{"id":1679688200464,"input":"4\n5\n105\n101\n100","output":"5\n95\n91\n100"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Tax in Chefland.cpp","group":"local","local":true}

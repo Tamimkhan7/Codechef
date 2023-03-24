@@ -1,0 +1,1 @@
+{"name":"Local: Kitchen Timings","url":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Kitchen Timings.cpp","tests":[{"id":1679688009304,"input":"4\n1 2\n3 7\n9 11\n2 10","output":"1\n4\n2\n8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Kitchen Timings.cpp","group":"local","local":true}
