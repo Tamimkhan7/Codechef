@@ -1,0 +1,1 @@
+{"name":"Local: Get Lowest Free","url":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Get Lowest Free.cpp","tests":[{"id":1679771146606,"input":"3\n6 2 4\n3 3 3\n8 4 4","output":"10\n6\n12"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\HP\\Desktop\\codechef problem solve in c++\\Get Lowest Free.cpp","group":"local","local":true}
