@@ -1,0 +1,1 @@
+{"name":"Local: Mana Points","url":"c:\\Users\\HP\\OneDrive\\Desktop\\codechef problem solve in c++\\Mana Points.cpp","tests":[{"id":1679860881889,"input":"3\n10 30\n6 41\n50 2","output":"3\n6\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\HP\\OneDrive\\Desktop\\codechef problem solve in c++\\Mana Points.cpp","group":"local","local":true}
