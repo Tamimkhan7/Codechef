@@ -8,19 +8,19 @@ using namespace std;
 #define mod 1000000007
 typedef long long int ll;
 typedef unsigned long long int llu;
-
 int main()
 {
     faster;
-int  t;
-    cin >> t;
-    while (t--)
+    ll n, m, l;
+    cin >> n >> m;
+    ll k = n * m;
+    if (k % 10 == 0)
     {
-        ll x;
-        cin >> x;
-        if (x >= 80)
-            cout << "YES" << endl;
-        else
-            cout << "NO" << endl;
+        cout << m << endl;
+    }
+    else
+    {
+        l = 10 - (k % 10);
+        cout << l << endl;
     }
 }

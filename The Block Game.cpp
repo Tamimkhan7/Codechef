@@ -12,15 +12,20 @@ typedef unsigned long long int llu;
 int main()
 {
     faster;
-int  t;
+    int t;
     cin >> t;
     while (t--)
     {
-        ll x;
-        cin >> x;
-        if (x >= 80)
-            cout << "YES" << endl;
+        string s, ss;
+        cin >> s;
+        int l = s.size();
+        for (int i = l - 1; i >= 0; i--)
+        {
+            ss += s[i];
+        }
+        if (ss == s)
+            cout << "wins" << endl;
         else
-            cout << "NO" << endl;
+            cout << "loses" << endl;
     }
 }

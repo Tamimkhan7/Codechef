@@ -8,17 +8,17 @@ using namespace std;
 #define mod 1000000007
 typedef long long int ll;
 typedef unsigned long long int llu;
-
 int main()
 {
     faster;
-int  t;
+    ll t;
     cin >> t;
     while (t--)
     {
-        ll x;
-        cin >> x;
-        if (x >= 80)
+        ll n;
+        cin >> n;
+        ll k = n % 4;
+        if (k == 2)
             cout << "YES" << endl;
         else
             cout << "NO" << endl;
