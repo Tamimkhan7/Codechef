@@ -1,0 +1,1 @@
+{"name":"Local: Car Range","url":"c:\\Users\\HP\\OneDrive\\Desktop\\codechef problem solve in c++\\Car Range.cpp","tests":[{"id":1683279092329,"input":"3\n5 10 20\n1 6 10\n4 6 1","output":"120\n60\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\HP\\OneDrive\\Desktop\\codechef problem solve in c++\\Car Range.cpp","group":"local","local":true}
