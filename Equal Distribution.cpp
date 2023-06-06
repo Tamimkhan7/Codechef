@@ -11,15 +11,14 @@ typedef unsigned long long int llu;
 
 int main()
 {
-    ll t;
+    int t;
     cin >> t;
     while (t--)
     {
-        faster;
-        ll a, b;
-        cin >> a >> b;
-        ll p = a + b;
-        if (p % 2 == 0)
+        int n, m;
+        cin >> n >> m;
+        int res = n + m;
+        if (res % 2 == 0)
             cout << "YES" << endl;
         else
             cout << "NO" << endl;

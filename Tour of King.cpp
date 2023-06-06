@@ -1,23 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ordered_set tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update>
-#define faster                    \
-    ios_base::sync_with_stdio(0); \
-    cin.tie(0);                   \
-    cout.tie(0);
-#define mod 1000000007
-typedef long long int ll;
-typedef unsigned long long int llu;
-
 int main()
 {
-    ll t;
+    int t;
     cin >> t;
     while (t--)
     {
-        ll x, y;
-        cin >> x >> y;
-        ll div = (x * 5) + (y * 7);
-        cout << div << endl;
+        int n, m;
+        cin >> n >> m;
+        int res = n * 5 + m * 7;
+        cout << res << endl;
     }
 }
