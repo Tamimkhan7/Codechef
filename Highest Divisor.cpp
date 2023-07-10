@@ -19,12 +19,12 @@ int main()
     vector<int> v;
     for (int i = 1; i <= n; i++)
     {
-        if (n % i == 0)
+        if (n % i == 0) // 1 13 7 91
         {
             v.push_back(i);
         }
     }
-    int maxi = v[0];
+    int maxi = v[0]; // 1
     for (int i = 0; i < v.size(); i++)
     {
         if (v[i] < 11)
