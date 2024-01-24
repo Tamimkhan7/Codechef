@@ -1,0 +1,1 @@
+{"name":"Local: Subset GCD","url":"/home/tamim/Desktop/codechef_problem/Subset GCD.cpp","tests":[{"id":1706109323823,"input":"3\n3 2\n3 3\n9 3","output":"2 3\n1 2 3\n2 4"},{"id":1706109530073,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tamim/Desktop/codechef_problem/Subset GCD.cpp","group":"local","local":true}
