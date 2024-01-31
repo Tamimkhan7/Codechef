@@ -1,0 +1,1 @@
+{"name":"Local: K Odd Sum","url":"/home/tamim/Desktop/codechef_problem/contest/K Odd Sum.cpp","tests":[{"id":1706715058759,"input":"4\n2 1\n4 2\n6 5\n","output":"2 1\n4 3 1 2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tamim/Desktop/codechef_problem/contest/K Odd Sum.cpp","group":"local","local":true}
