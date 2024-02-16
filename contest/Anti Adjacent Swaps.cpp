@@ -1,53 +1,54 @@
-#include <iostream>
-#include <vector>
-
-bool canSortArray(std::vector<int> &arr, int N)
+#include <bits/stdc++.h>
+using namespace std;
+#define ordered_set tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update>
+#define MTK                       \
+    ios_base::sync_with_stdio(0); \
+    cin.tie(0);                   \
+    cout.tie(0);
+typedef long long int ll;
+#define all(x) x.begin(), x.end()
+#define mod 1000000007
+void solve()
 {
-    for (int i = 0; i < N - 1; ++i)
+    int n;
+    cin >> n;
+    vector<int> a(n), b(n);
+    for (int i = 0; i < n; i++)
     {
-        if (arr[i] > arr[i + 1])
+        cin >> a[i];
+        b[i] = a[i];
+    }
+    sort(all(b));
+    if (a == b)
+    {
+        cout << "YES" << '\n';
+        return;
+    }
+    for (int i = 0; i < n - 2; i++)
+    {
+        for (int j = i + 2; i < n; i++)
         {
-            // Check if the elements are not adjacent
-            if (i + 2 < N && arr[i] > arr[i + 2])
+            if (a[i] > a[j] and (abs(a[i] - a[j])) > 1)
             {
-                // Swap the elements to make the array sorted
-                std::swap(arr[i], arr[i + 2]);
-            }
-            else
-            {
-                // If not possible to swap, return false
-                return false;
+                swap(a[i], a[j]);
             }
         }
     }
-    return true;
+    // for (auto x : a)
+    //     cout << x << ' ';
+    // cout << '\n';
+    if (a == b)
+        cout << "YES" << '\n';
+    else
+        cout << "NO" << '\n';
 }
-
-int main()
+int32_t main()
 {
-    int T;
-    std::cin >> T;
-
-    for (int t = 0; t < T; ++t)
+    MTK;
+    int t;
+    cin >> t;
+    while (t--)
     {
-        int N;
-        std::cin >> N;
-
-        std::vector<int> arr(N);
-        for (int i = 0; i < N; ++i)
-        {
-            std::cin >> arr[i];
-        }
-
-        if (canSortArray(arr, N))
-        {
-            std::cout << "YES\n";
-        }
-        else
-        {
-            std::cout << "NO\n";
-        }
+        solve();
     }
-
-    return 0;
 }
