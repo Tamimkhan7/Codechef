@@ -23,19 +23,16 @@ int main()
         for (int i = 0; i < n; i++)
             cin >> a[i];
         sort(a, a + n);
-        int s = a[0];
-        ll ans = 0;
-        // for (auto x : a)
-        //     cout << x << ' ';
-        // cout << '\n';
-        for (int i = 1; i < n; i++)
+        ll sum = 0;
+
+        for (ll i = 0; i < n; i++)
         {
-            // cout << s << ' ';
-            int x = (1LL * a[i] * s) % mod;
-            int y = (a[i] + s) % mod;
-            ans = (max(ans, (1LL * max(x, y)))) % mod;
-            s = ans;
+            if (a[i] == 1 or sum < 2)
+                sum = (sum % mod + a[i] % mod) % mod;
+            else
+                sum = (sum % mod * a[i] % mod) % mod;
         }
-        cout << ans << '\n';
+
+        cout << (sum % mod) << '\n';
     }
 }

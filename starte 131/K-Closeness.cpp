@@ -19,33 +19,20 @@ int main()
     {
         int n, k;
         cin >> n >> k;
-        int a[n];
+        vector<ll> a(n);
         for (int i = 0; i < n; i++)
-            cin >> a[i];
-        sort(a, a + n);
-        reverse(a, a + n);
-        int max_value = a[0];
-        for (int i = 1; i < n; i++)
         {
-            int x = max_value - a[i];
-            // if (x == k)
-            //     a[i] += x;
-
-            x /= k;
-            if (x > 0)
-            {
-                // cout << x << ' ' << k << '\n';
-                if ((k / 2) <= x and (k / 2) > 1)
-                    k++;
-                x *= k;
-                a[i] += x;
-            }
+            cin >> a[i];
+            a[i] %= k;
+            cout << a[i] << ' ';
         }
-        sort(a, a + n);
-        // for (int i = 0; i < n; i++)
-        //     cout << a[i] << ' ';
-        // cout << '\n';
-        // int len = n;
-        cout << a[n - 1] - a[0] << '\n';
+        cout << '\n';
+        sort(all(a), greater<int>());
+        ll ans = a[0] - a[n - 1];
+        for (int i = n - 1; i > 0; i--)
+            ans = min(ans, a[i] + k - a[i - 1]);
+        // ll x = a[i] + k - a[i - 1];
+
+        cout << ans << '\n';
     }
 }
