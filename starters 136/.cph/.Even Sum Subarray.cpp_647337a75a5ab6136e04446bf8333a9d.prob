@@ -1,0 +1,1 @@
+{"name":"Local: Even Sum Subarray","url":"/home/tamim/Desktop/Codechef/starters 136/Even Sum Subarray.cpp","tests":[{"id":1716993333845,"input":"4\n3\n2 1 2\n3\n1 3 2\n6\n2 2 1 1 1 2\n1\n1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tamim/Desktop/Codechef/starters 136/Even Sum Subarray.cpp","group":"local","local":true}
