@@ -9,31 +9,21 @@ using namespace std;
 #define all(x) (x).begin(), (x).end()
 #define ll int long long
 #define mod 1000000007
-void solve()
+vector<int> f(int n)
 {
-    int n;
-    cin >> n;
-    int p = 100;
-    vector<int> ans;
-    ans.push_back(p);
-    for (int i = 1; i <= n; i++)
+    if (n == 1)
+        return {1};
+    else if (n == 2)
+        return {7, 3};
+    else if (n == 3)
+        return {5, 7, 3};
+    else
     {
-        for (int j = p - 1; j >= 1; j--)
-        {
-            if ((p & j) >= (p ^ j))
-            {
-                p = j;
-                ans.push_back(p);
-                break;
-            }
-        }
-        if (p < 1)
-            p = 100;
+        vector<int> ans(n, 7);
+        ans[0] = 5;
+        ans[n - 1] = 3;
+        return ans;
     }
-    ans.pop_back();
-    for (auto x : ans)
-        cout << x << ' ';
-    cout << '\n';
 }
 int32_t main()
 {
@@ -41,6 +31,13 @@ int32_t main()
     int t;
     cin >> t;
     while (t--)
-        solve();
+    {
+        int n;
+        cin >> n;
+        vector<int> ans = f(n);
+        for (auto x : ans)
+            cout << x << ' ';
+        cout << '\n';
+    }
     return 0;
 }
