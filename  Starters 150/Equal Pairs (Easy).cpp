@@ -31,7 +31,7 @@ int32_t main()
         }
 
         int zero_count = cnt[0];
-        cnt.erase(0);           
+        cnt.erase(0);
 
         int max_freq_value = 0, max_freq = 0;
         for (auto &[key, val] : cnt)
@@ -48,9 +48,8 @@ int32_t main()
         ll ans = 0;
         for (auto &[key, val] : cnt)
         {
-            if (val > 1)  
-                ans += (ll)val * (val - 1) / 2; 
-          
+            if (val > 1)
+                ans += (ll)val * (val - 1) / 2;
         }
 
         cout << ans << '\n';
