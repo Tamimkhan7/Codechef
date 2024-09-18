@@ -13,43 +13,44 @@ using namespace std;
 int32_t main()
 {
     MTK;
-    int T;
-    cin >> T;
-
-    while (T--)
+    int t;
+    cin >> t;
+    while (t--)
     {
-        int N, M;
-        cin >> N >> M;
-        vector<string> v(M);
-        for (int i = 0; i < M; i++)
+        int n, m;
+        cin >> n >> m;
+        vector<string> v(m);
+        for (int i = 0; i < m; ++i)
             cin >> v[i];
 
         ll ans = 0;
 
-        for (int col = 0; col < N; col++)
+        for (int c = 0; c < n; ++c)
         {
-            int cnt0 = 0, cnt1 = 0, cnt = 0;
-            for (int row = 0; row < M; row++)
+            int cnt0 = 0, cnt1 = 0, cntq = 0;
+            for (int r = 0; r < m; ++r)
             {
-                if (v[row][col] == '0')
+                if (v[r][c] == '0')
                     cnt0++;
-                else if (v[row][col] == '1')
+                else if (v[r][c] == '1')
                     cnt1++;
                 else
-                    cnt++;
+                    cntq++;
             }
-            // cout << cnt0 << ' ' << cnt1 << ' ' << cnt << '\n';
-            ll mx = max(cnt1, cnt0);
-            if (mx == 0 and cnt != 0)
-            {
-                ll x = cnt / 2;
-                ll y = (cnt / 2) + (cnt % 2);
-                ans += x * y;
-            }
-            else
-                ans += (cnt1 * cnt0) + (mx * cnt);
-        }
 
+            int half = m / 2;
+
+            if (cnt0 + cntq <= half)
+                cnt0 += cntq;
+            else if (cnt1 + cntq <= half)
+                cnt1 += cntq;
+            else
+            {
+                cnt0 = half;
+                cnt1 = m - half;
+            }
+            ans += 1LL * cnt0 * cnt1;
+        }
         cout << ans << '\n';
     }
     return 0;
