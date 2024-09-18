@@ -1,0 +1,1 @@
+{"name":"Local: Range Minimize","url":"/home/tamim/Desktop/Codechef/START152/Range Minimize.cpp","tests":[{"id":1726672024416,"input":"3\n3\n2 3 1\n5\n1 10000 10 100 1000\n6\n64 11 998 1005 843 945","output":"0\n99\n162"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tamim/Desktop/Codechef/START152/Range Minimize.cpp","group":"local","local":true}
