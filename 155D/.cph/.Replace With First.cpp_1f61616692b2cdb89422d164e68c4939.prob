@@ -1,0 +1,1 @@
+{"name":"Local: Replace With First","url":"/home/tamim/Desktop/Codechef/155D/Replace With First.cpp","tests":[{"id":1728490961059,"input":"3\n4 3\naabc\naab\n8 8\naccepted\naccapted\n1 1\nz\nz","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tamim/Desktop/Codechef/155D/Replace With First.cpp","group":"local","local":true}
