@@ -1,0 +1,1 @@
+{"name":"Local: Count Triplets","url":"/home/tamim/Desktop/Codechef/START156/Count Triplets.cpp","tests":[{"id":1729093815265,"input":"3\n5\n1 2 1 2 1\n3\n1 2 3\n4\n1 4 2 3","output":"21\n17\n10\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tamim/Desktop/Codechef/START156/Count Triplets.cpp","group":"local","local":true}
