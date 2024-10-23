@@ -1,0 +1,1 @@
+{"name":"Local: Normal is Good (Easy)","url":"/home/tamim/Desktop/Codechef/START157C/Normal is Good (Easy).cpp","tests":[{"id":1729709733847,"input":"3\n3\n2 2 2\n4\n1 2 1 2\n5\n2 2 1 1 2","output":"6\n4\n7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tamim/Desktop/Codechef/START157C/Normal is Good (Easy).cpp","group":"local","local":true}
