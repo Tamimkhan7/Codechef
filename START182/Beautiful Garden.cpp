@@ -31,7 +31,7 @@ int32_t main()
                     ans += (d / t[i]);
                 else
                     ans += (d / t[i]) + 1;
-            }
+            } 
         }
         cout << ans << '\n';
     }
