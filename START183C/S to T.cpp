@@ -41,9 +41,8 @@ int32_t main()
                 s[i] = '1';
             }
         }
-       // show(s), show(t);
+        // show(s), show(t);
         bool ok = true;
-
         for (int i = n - 1; i >= 0; i--)
         {
             if (s[i] != t[i])
