@@ -13,25 +13,44 @@ using namespace std;
 int32_t main()
 {
     MTK;
-    int t;
-    cin >> t;
-    while (t--)
+    string s;
+    cin >> s;
+    unordered_map<char, int> mp;
+    for (auto c : s)
+        mp[c]++;
+    bool ok = false;
+    if (mp['L'] == 0 and !ok)
     {
-        int n;
-        cin >> n;
-        vector<int> a(n), b(n);
-        for (int i = 0; i < n; i++)
-            cin >> a[i];
-        for (int i = 0; i < n; i++)
-            cin >> b[i];
-        int ans = 0;
-        for (int i = 0; i < n; i++)
-        {
-            if (a[i] > b[i])
-                ans += a[i] - b[i];
-        }
-        cout << ans << '\n';
+        mp['L']++;
+        ok = true;
+        s.insert(s.begin(), 'L');
     }
-
-    return 0;
+    if (mp['C'] == 0 and !ok)
+    {
+        mp['C']++;
+        ok = true;
+        s.push_back('C');
+    }
+    if (mp['T'] == 0 and !ok)
+    {
+        mp['T']++;
+        s.push_back('T');
+        ok = true;
+    }
+    if (!ok)
+        s.insert(s.begin(), 'L');
+    show(s);
+    long long ans = 0;
+    long long cntL = 0, cntLC = 0;
+    for (auto c : s)
+    {
+        if (c == 'L')
+            cntL++;
+        else if (c == 'C')
+            cntLC += cntL;
+        else if (c == 'T')
+            ans += cntLC;
+        show(c);
+        show(ans);
+    }
 }
