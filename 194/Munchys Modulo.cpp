@@ -29,25 +29,26 @@ int32_t main()
         for (int j = 0; j < n; ++j)
         {
             for (int k = j + 1; k < n; ++k)
-            {
-                int sum = a[j] + a[k];
-                for (int i = n - 1; i >= 0; --i)
+                Mark All
                 {
-                    int val = a[i];
-                    int cnt = freq[val];
-
-                    if (val == a[j])
-                        cnt--;
-                    if (val == a[k])
-                        cnt--;
-
-                    if (cnt > 0)
+                    int sum = a[j] + a[k];
+                    for (int i = n - 1; i >= 0; --i)
                     {
-                        ans = max(ans, val % sum);
-                        break;
+                        int val = a[i];
+                        int cnt = freq[val];
+
+                        if (val == a[j])
+                            cnt--;
+                        if (val == a[k])
+                            cnt--;
+
+                        if (cnt > 0)
+                        {
+                            ans = max(ans, val % sum);
+                            break;
+                        }
                     }
                 }
-            }
         }
 
         cout << ans << '\n';
